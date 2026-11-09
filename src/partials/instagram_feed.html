@@ -1,0 +1,749 @@
+<section id="shopify-section-sections--27992319099201__abs_instagram_feed_YiNdAt" class="shopify-section shopify-section-group-footer-group abs-instagram-feed-section">
+<section
+  id="ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt"
+  class="abs-instagram"
+  aria-label="ABS Developers Instagram feed"
+>
+  <style>
+    #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt {
+      --ai-bg: #FFFFFF;
+      --ai-text: #0A0C0A;
+      --ai-muted: #747B75;
+      --ai-gold: #C79A32;
+      --ai-border: #D9DDD7;
+      --ai-top: 60px;
+      --ai-bottom: 40px;
+
+      position: relative;
+      overflow: hidden;
+      color: var(--ai-text);
+      background: var(--ai-bg);
+    }
+
+    #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt *,
+    #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt *::before,
+    #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt *::after {
+      box-sizing: border-box;
+    }
+
+    #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt .abs-instagram__shell {
+      width: min(
+        calc(100% - (var(--abs-gutter, 24px) * 2)),
+        var(--abs-container, 1440px)
+      );
+      margin-inline: auto;
+      padding-top: var(--ai-top);
+      padding-bottom: var(--ai-bottom);
+    }
+
+    #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt .abs-instagram__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px;
+      margin-bottom: 30px;
+    }
+
+    #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt .abs-instagram__heading {
+      margin: 0;
+      color: var(--ai-text);
+      font-family:
+        var(--font-heading-family),
+        -apple-system,
+        BlinkMacSystemFont,
+        "SF Pro Display",
+        "Helvetica Neue",
+        Arial,
+        sans-serif;
+      font-size: clamp(4.2rem, 4.2vw, 6.3rem);
+      line-height: .98;
+      font-weight: 600;
+      letter-spacing: -.05em;
+    }
+
+    #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt .abs-instagram__profile-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--ai-gold);
+      text-decoration: none;
+      font-size: clamp(1.45rem, 1.45vw, 2rem);
+      line-height: 1;
+      font-weight: 600;
+      letter-spacing: -.025em;
+      white-space: nowrap;
+      transition: opacity 180ms ease;
+    }
+
+    #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt .abs-instagram__profile-link:hover {
+      opacity: .72;
+    }
+
+    #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt .abs-instagram__profile-link svg {
+      width: 23px;
+      height: 23px;
+      flex: 0 0 auto;
+      color: #626760;
+    }
+
+    #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt .abs-instagram__profile-arrow {
+      margin-left: 4px;
+      color: #626760;
+      font-size: .95em;
+      transform: translateY(-1px);
+    }
+
+    /*
+      IMPORTANT:
+      This is the actual Shopify app block.
+      We deliberately do not hide it, clone it, scrape it or interfere
+      with its pagination / modal / carousel JavaScript.
+    */
+    #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt .abs-instagram__feed {
+      width: 100%;
+      min-width: 0;
+      height: auto !important;
+      max-height: none !important;
+      position: relative;
+      overflow: visible !important;
+    }
+
+    #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt .abs-instagram__feed > .shopify-block {
+      width: 100%;
+      max-width: none;
+      height: auto !important;
+      max-height: none !important;
+      margin: 0;
+      overflow: visible !important;
+    }
+
+    #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt .abs-instagram__feed .instafeed-shopify,
+    #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt .abs-instagram__feed [id^="feed-"],
+    #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt .abs-instagram__feed #insta-feed {
+      width: 100% !important;
+      max-width: none !important;
+      height: auto !important;
+      min-height: 0 !important;
+      max-height: none !important;
+      margin-inline: auto !important;
+      overflow: visible !important;
+    }
+
+    /*
+      Remove only obvious OUTER app spacing where Mintt exposes it.
+      We do not target post cards or its navigation internals.
+    */
+    #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt .abs-instagram__feed .instafeed-shopify {
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+    }
+
+    #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt .abs-instagram__divider {
+      width: 100%;
+      height: 1px;
+      margin-top: 48px;
+      background: var(--ai-border);
+    }
+
+    #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt .abs-instagram__empty {
+      min-height: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 28px;
+      border: 1px solid var(--ai-border);
+      color: var(--ai-muted);
+      text-align: center;
+      font-size: 1.2rem;
+      line-height: 1.5;
+    }
+
+    @media screen and (max-width: 749px) {
+      #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt .abs-instagram__shell {
+        width: calc(100% - 32px);
+        padding-top: 50px;
+        padding-bottom: 40px;
+      }
+
+      #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt .abs-instagram__header {
+        align-items: flex-end;
+        gap: 18px;
+        margin-bottom: 22px;
+      }
+
+      #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt .abs-instagram__heading {
+        font-size: clamp(3.6rem, 11vw, 5rem);
+      }
+
+      #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt .abs-instagram__profile-link {
+        gap: 7px;
+        font-size: 1.2rem;
+      }
+
+      #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt .abs-instagram__profile-link svg {
+        width: 19px;
+        height: 19px;
+      }
+
+      #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt .abs-instagram__divider {
+        margin-top: 34px;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt .abs-instagram__header {
+        display: grid;
+        gap: 14px;
+      }
+
+      #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt .abs-instagram__profile-link {
+        justify-self: start;
+      }
+    }
+  
+    /* ============================================================
+       ABS REFERENCE INSTAGRAM CARD DESIGN
+       This styles Mintt's REAL cards in place.
+       Mintt still controls slider, loading, pages, videos and popup.
+       ============================================================ */
+
+    #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt .instafeed-new-layout-container {
+      width: 100% !important;
+      max-width: none !important;
+      height: auto !important;
+      min-height: 0 !important;
+      max-height: none !important;
+      padding: 0 !important;
+      overflow: visible !important;
+    }
+
+    #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt .instafeed-new-layout-wrapper {
+      width: 100% !important;
+      height: auto !important;
+      min-height: 0 !important;
+      max-height: none !important;
+      display: flex !important;
+      align-items: stretch !important;
+      gap: 15px !important;
+      overflow-x: auto !important;
+      overflow-y: visible !important;
+      scroll-snap-type: x mandatory !important;
+      scroll-behavior: smooth !important;
+      scrollbar-width: none !important;
+      overscroll-behavior-x: contain !important;
+      -webkit-overflow-scrolling: touch !important;
+      transform: none !important;
+      translate: none !important;
+      animation: none !important;
+      transition: none !important;
+    }
+
+    #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt .instafeed-new-layout-wrapper::-webkit-scrollbar {
+      display: none !important;
+    }
+
+    #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt .instafeed-new-layout-item.abs-ig-card {
+      position: relative !important;
+      flex: 0 0 calc((100% - 60px) / 5) !important;
+      width: calc((100% - 60px) / 5) !important;
+      max-width: calc((100% - 60px) / 5) !important;
+      height: auto !important;
+      min-height: 0 !important;
+      max-height: none !important;
+      display: flex !important;
+      flex-direction: column !important;
+      overflow: hidden !important;
+      scroll-snap-align: start !important;
+      border: 1px solid #D6D9D3 !important;
+      border-radius: 4px !important;
+      color: #0A0C0A !important;
+      background: #FFFFFF !important;
+      box-shadow: none !important;
+      isolation: isolate;
+      box-sizing: border-box !important;
+      cursor: pointer !important;
+    }
+
+    #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt .abs-ig-card-head {
+      order: -20;
+      width: 100%;
+      min-height: 52px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 12px;
+      border-bottom: 1px solid #ECEDE9;
+      background: #FFFFFF;
+      z-index: 6;
+    }
+
+    #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt .abs-ig-avatar {
+      width: 32px;
+      height: 32px;
+      flex: 0 0 32px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      border-radius: 50%;
+      color: var(--ai-gold);
+      background-color: #0A0C0A;
+      box-sizing: border-box;
+      font-size: 8px;
+      font-weight: 700;
+      letter-spacing: -0.04em;
+      line-height: 1;
+      text-transform: uppercase;
+      text-align: center;
+      white-space: nowrap;
+      user-select: none;
+    }
+
+    #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt .abs-ig-avatar img {
+      display: none !important;
+    }
+
+    #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt .abs-ig-username {
+      min-width: 0;
+      overflow: hidden;
+      color: #0A0C0A;
+      font-size: 16px;
+      line-height: 1.2;
+      font-weight: 500;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt .abs-ig-media {
+      order: -10;
+      position: relative !important;
+      inset: auto !important;
+      width: 100% !important;
+      height: auto !important;
+      min-height: 0 !important;
+      display: block !important;
+      overflow: hidden !important;
+      aspect-ratio: 1080 / 1350 !important; /* portrait 4:5 */
+      border-radius: 0 !important;
+      background: #F0F1EE !important;
+    }
+
+    #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt .abs-ig-media img,
+    #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt .abs-ig-media video {
+      width: 100% !important;
+      height: 100% !important;
+      min-height: 100% !important;
+      display: block !important;
+      object-fit: cover !important;
+      object-position: center !important;
+      border-radius: 0 !important;
+    }
+
+    #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt .abs-ig-card .instafeed-new-layout-item-container {
+      border-radius: 0 !important;
+    }
+
+    #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt .abs-ig-card .tagged-username-overlay {
+      display: none !important;
+    }
+
+    #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt .abs-ig-footer {
+      order: 20;
+      width: 100%;
+      max-width: 100%;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      flex: 0 0 auto;
+      margin: 0;
+      padding: 0 16px 14px 12px;
+      overflow: hidden;
+      background: #FFFFFF;
+      z-index: 6;
+    }
+
+    #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt .abs-ig-actions {
+      order: 0;
+      width: 100%;
+      max-width: 100%;
+      box-sizing: border-box;
+      min-height: 48px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 10px 0 7px;
+      color: #0A0C0A;
+      background: #FFFFFF;
+      pointer-events: none;
+      z-index: 6;
+    }
+
+    #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt .abs-ig-action {
+      width: 20px;
+      height: 20px;
+      flex: 0 0 20px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt .abs-ig-action svg {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt .abs-ig-action--bookmark {
+      margin-left: auto;
+    }
+
+    #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt .abs-ig-caption {
+      --abs-ig-caption-lines: 2;
+      --abs-ig-caption-lh: 18px;
+      order: 0;
+      width: 100%;
+      max-width: 100%;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      color: #30342F;
+      background: transparent;
+      font-size: 12px;
+      line-height: var(--abs-ig-caption-lh);
+      text-align: left;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: var(--abs-ig-caption-lines);
+      line-clamp: var(--abs-ig-caption-lines);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      word-break: break-word;
+      overflow-wrap: anywhere;
+      height: calc(var(--abs-ig-caption-lh) * var(--abs-ig-caption-lines));
+      min-height: calc(var(--abs-ig-caption-lh) * var(--abs-ig-caption-lines));
+      max-height: calc(var(--abs-ig-caption-lh) * var(--abs-ig-caption-lines));
+      flex: 0 0 auto;
+      z-index: 6;
+    }
+
+    #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt .abs-instagram__reference-dots {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 27px;
+    }
+
+    #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt .abs-instagram__reference-dot {
+      width: 12px;
+      height: 12px;
+      flex: 0 0 12px;
+      display: block;
+      padding: 0;
+      border: 0;
+      border-radius: 50%;
+      background: #B8BBB6;
+      appearance: none;
+      cursor: pointer;
+      transition:
+        background-color 180ms ease,
+        transform 180ms ease;
+    }
+
+    #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt .abs-instagram__reference-dot:hover {
+      transform: scale(1.12);
+    }
+
+    #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt .abs-instagram__reference-dot.is-active {
+      background: var(--ai-gold);
+    }
+
+    #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt .abs-instagram__reference-dot:focus-visible {
+      outline: 2px solid var(--ai-gold);
+      outline-offset: 4px;
+    }
+
+    @media screen and (max-width: 989px) {
+      #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt .instafeed-new-layout-item.abs-ig-card {
+        flex-basis: calc((100% - 24px) / 3) !important;
+        width: calc((100% - 24px) / 3) !important;
+        max-width: calc((100% - 24px) / 3) !important;
+      }
+    }
+
+    @media screen and (max-width: 749px) {
+      #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt .instafeed-new-layout-wrapper {
+        gap: 12px !important;
+      }
+
+      #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt .instafeed-new-layout-item.abs-ig-card {
+        flex: 0 0 min(82vw, 330px) !important;
+        width: min(82vw, 330px) !important;
+        max-width: min(82vw, 330px) !important;
+      }
+
+      #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt .abs-ig-card-head {
+        min-height: 48px;
+        padding: 9px 10px;
+      }
+
+      #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt .abs-ig-actions {
+        padding-inline: 10px;
+      }
+
+      #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt .abs-ig-footer {
+        padding: 0 14px 14px 10px;
+      }
+
+      #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt .abs-instagram__reference-dots {
+        margin-top: 22px;
+      }
+
+      #ABS-Instagram-sections--27992319099201__abs_instagram_feed_YiNdAt .abs-instagram__reference-dot {
+        width: 10px;
+        height: 10px;
+      }
+    }
+
+  
+    
+
+  </style>
+
+  <div class="abs-instagram__shell">
+    <div class="abs-instagram__header">
+      <h2 class="abs-instagram__heading">
+        Instagram Feed
+      </h2>
+
+      <a
+        class="abs-instagram__profile-link"
+        href="https://www.instagram.com/absdevelopers/"
+        target="_blank"
+        rel="noopener"
+        aria-label="Open @absdevelopers on Instagram"
+      >
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <rect
+            x="3.25"
+            y="3.25"
+            width="17.5"
+            height="17.5"
+            rx="5"
+            stroke="currentColor"
+            stroke-width="1.5"
+          />
+          <circle
+            cx="12"
+            cy="12"
+            r="4"
+            stroke="currentColor"
+            stroke-width="1.5"
+          />
+          <circle
+            cx="17.25"
+            cy="6.75"
+            r="1"
+            fill="currentColor"
+          />
+        </svg>
+
+        <span>@absdevelopers</span>
+        <span class="abs-instagram__profile-arrow" aria-hidden="true">↗</span>
+      </a>
+    </div>
+
+    <div class="abs-instagram__feed"><div id="shopify-block-AMm1oOVhTNkszZGlZV__instafeed_app_block_XmyDAg" class="shopify-block shopify-app-block">
+<style>
+      div[id*="instafeed_app_block"] {
+        width: 100%;
+      }
+      div.shopify-section:has(> [id*="instafeed_app_block"]) {
+      width: 100%;
+      }
+      
+      body #insta-feed {
+      
+          
+
+          
+          margin-bottom: 0px!important;
+          
+
+          
+
+          
+
+          
+      }
+      
+      body #insta-feed h2 {
+      
+        
+        
+         text-align: center;
+      }
+
+      
+      
+</style>
+<div id="insta-feed"><div class="instafeed-new-layout-container"><div class="instafeed-new-layout-wrapper">
+<div style="clip-path: inset(0px round 6px);" class="instafeed-new-layout-item abs-ig-card image-loaded" data-abs-instagram-permalink="https://www.instagram.com/p/Deg9erXDlmR/"><div class="abs-ig-card-head" data-abs-instagram-ui="header"><span class="abs-ig-avatar" aria-hidden="true">ABS</span><span class="abs-ig-username">absdevelopers</span></div><img style="border-radius:6px;" class="instafeed-lazy-image instafeed-lazy-image--handled" src="/assets/images/instagram/post-01.jpg" alt="Instagram post with the caption: 🔑 YOUR NEXT CHAPTER BEGINS WITH THE RIGHT ADDRESS!
+
+Why wait fo..." loading="lazy">
+    <div tabindex="0" role="link" aria-label="Instagram post 1 opens in a new tab" class="instafeed-new-layout-item-container abs-ig-media">
+      <div class="instafeed-hover-layer " data-feed-id="0-carousel_album" style="border-radius:6px;"><div class="instafeed-hover-icon"><img class="instafeed-lazy-image instafeed-lazy-image--handled" src="/assets/images/instagram/instagram-icon.svg" alt=""></div></div>
+    </div><div class="abs-ig-footer" data-abs-instagram-ui="footer"><div class="abs-ig-actions" data-abs-instagram-ui="actions"><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.8 4.8a5.5 5.5 0 0 0-7.8 0L12 5.8l-1-1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.4a5.5 5.5 0 0 0 0-7.8Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9.5 9.5 0 0 1-3.7-.8L3 21l1.8-5a8.4 8.4 0 1 1 16.2-4.5Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m22 2-9.5 20-2.1-8.4L2 10.5 22 2Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10.4 13.6 22 2" stroke="currentColor" stroke-width="1.55" stroke-linecap="round"></path></svg></span><span class="abs-ig-action abs-ig-action--bookmark"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 3.5h12v17L12 17l-6 3.5v-17Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div><p class="abs-ig-caption" data-abs-instagram-ui="caption">🔑 YOUR NEXT CHAPTER BEGINS WITH THE RIGHT ADDRESS! Why wait for tomorrow when your next investment opportunity is ready today? Discover ABS Mall &amp; Residency, a premium development in Bahria Town, Lahore, designed for those who value comfort, convenience, and smart investment opportunities. 🏢 Ready for Possession ✅ Approved Development 📍 Prime Location – Bahria Town, Lahore 💼 Ideal for Business &amp; Rental Income Potential ✨ Premium Residential &amp; Commercial Spaces Skip the construction wait and take the next step toward property ownership with confidence. Your Space. Your Success. Your Future. ABS Developers – A Pioneer in Shariah-Compliant Real Estate. 📞 03-222-333-332 🌐 www.abs-developers.com #ABSMallAndResidency #ABSDevelopers #ReadyForPossession #BahriaTownLahore #LahoreRealEstate</p></div></div>
+<div style="clip-path: inset(0px round 6px);" class="instafeed-new-layout-item abs-ig-card image-loaded" data-abs-instagram-permalink="https://www.instagram.com/p/Deg9c44ju5v/"><div class="abs-ig-card-head" data-abs-instagram-ui="header"><span class="abs-ig-avatar" aria-hidden="true">ABS</span><span class="abs-ig-username">absdevelopers</span></div><img style="border-radius:6px;" class="instafeed-lazy-image instafeed-lazy-image--handled" src="/assets/images/instagram/post-02.jpg" alt="Instagram post with the caption: 🔑 YOUR NEXT CHAPTER BEGINS WITH THE RIGHT ADDRESS!
+
+Why wait fo..." loading="lazy">
+    <div tabindex="0" role="link" aria-label="Instagram post 2 opens in a new tab" class="instafeed-new-layout-item-container abs-ig-media">
+      <div class="instafeed-hover-layer " data-feed-id="0-carousel_album" style="border-radius:6px;"><div class="instafeed-hover-icon"><img class="instafeed-lazy-image instafeed-lazy-image--handled" src="/assets/images/instagram/instagram-icon.svg" alt=""></div></div>
+    </div><div class="abs-ig-footer" data-abs-instagram-ui="footer"><div class="abs-ig-actions" data-abs-instagram-ui="actions"><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.8 4.8a5.5 5.5 0 0 0-7.8 0L12 5.8l-1-1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.4a5.5 5.5 0 0 0 0-7.8Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9.5 9.5 0 0 1-3.7-.8L3 21l1.8-5a8.4 8.4 0 1 1 16.2-4.5Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m22 2-9.5 20-2.1-8.4L2 10.5 22 2Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10.4 13.6 22 2" stroke="currentColor" stroke-width="1.55" stroke-linecap="round"></path></svg></span><span class="abs-ig-action abs-ig-action--bookmark"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 3.5h12v17L12 17l-6 3.5v-17Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div><p class="abs-ig-caption" data-abs-instagram-ui="caption">🔑 YOUR NEXT CHAPTER BEGINS WITH THE RIGHT ADDRESS! Why wait for tomorrow when your next investment opportunity is ready today? Discover ABS Mall &amp; Residency, a premium development in Bahria Town, Lahore, designed for those who value comfort, convenience, and smart investment opportunities. 🏢 Ready for Possession ✅ Approved Development 📍 Prime Location – Bahria Town, Lahore 💼 Ideal for Business &amp; Rental Income Potential ✨ Premium Residential &amp; Commercial Spaces Skip the construction wait and take the next step toward property ownership with confidence. Your Space. Your Success. Your Future. ABS Developers – A Pioneer in Shariah-Compliant Real Estate. 📞 03-222-333-332 🌐 www.abs-developers.com #ABSMallAndResidency #ABSDevelopers #ReadyForPossession #BahriaTownLahore #LahoreRealEstate</p></div></div>
+<div style="clip-path: inset(0px round 6px);" class="instafeed-new-layout-item abs-ig-card image-loaded" data-abs-instagram-permalink="https://www.instagram.com/p/Deg9a7vOIhQ/"><div class="abs-ig-card-head" data-abs-instagram-ui="header"><span class="abs-ig-avatar" aria-hidden="true">ABS</span><span class="abs-ig-username">absdevelopers</span></div><img style="border-radius:6px;" class="instafeed-lazy-image instafeed-lazy-image--handled" src="/assets/images/instagram/post-03.jpg" alt="Instagram post with the caption: 🔑 YOUR NEXT CHAPTER BEGINS WITH THE RIGHT ADDRESS!
+
+Why wait fo..." loading="lazy">
+    <div tabindex="0" role="link" aria-label="Instagram post 3 opens in a new tab" class="instafeed-new-layout-item-container abs-ig-media">
+      <div class="instafeed-hover-layer " data-feed-id="0-image" style="border-radius:6px;"><div class="instafeed-hover-icon"><img class="instafeed-lazy-image instafeed-lazy-image--handled" src="/assets/images/instagram/instagram-icon.svg" alt=""></div></div>
+    </div><div class="abs-ig-footer" data-abs-instagram-ui="footer"><div class="abs-ig-actions" data-abs-instagram-ui="actions"><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.8 4.8a5.5 5.5 0 0 0-7.8 0L12 5.8l-1-1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.4a5.5 5.5 0 0 0 0-7.8Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9.5 9.5 0 0 1-3.7-.8L3 21l1.8-5a8.4 8.4 0 1 1 16.2-4.5Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m22 2-9.5 20-2.1-8.4L2 10.5 22 2Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10.4 13.6 22 2" stroke="currentColor" stroke-width="1.55" stroke-linecap="round"></path></svg></span><span class="abs-ig-action abs-ig-action--bookmark"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 3.5h12v17L12 17l-6 3.5v-17Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div><p class="abs-ig-caption" data-abs-instagram-ui="caption">🔑 YOUR NEXT CHAPTER BEGINS WITH THE RIGHT ADDRESS! Why wait for tomorrow when your next investment opportunity is ready today? Discover ABS Mall &amp; Residency, a premium development in Bahria Town, Lahore, designed for those who value comfort, convenience, and smart investment opportunities. 🏢 Ready for Possession ✅ Approved Development 📍 Prime Location – Bahria Town, Lahore 💼 Ideal for Business &amp; Rental Income Potential ✨ Premium Residential &amp; Commercial Spaces Skip the construction wait and take the next step toward property ownership with confidence. Your Space. Your Success. Your Future. ABS Developers – A Pioneer in Shariah-Compliant Real Estate. 📞 03-222-333-332 🌐 www.abs-developers.com #ABSMallAndResidency #ABSDevelopers #ReadyForPossession #BahriaTownLahore #LahoreRealEstate</p></div></div>
+<div style="clip-path: inset(0px round 6px);" class="instafeed-new-layout-item abs-ig-card image-loaded" data-abs-instagram-permalink="https://www.instagram.com/p/Deg89W6jpxJ/"><div class="abs-ig-card-head" data-abs-instagram-ui="header"><span class="abs-ig-avatar" aria-hidden="true">ABS</span><span class="abs-ig-username">absdevelopers</span></div><img style="border-radius:6px;" class="instafeed-lazy-image instafeed-lazy-image--handled" src="/assets/images/instagram/post-04.jpg" alt="Instagram post with the caption: 🏙️ 3 Reasons Why Real Estate Deserves a Place in Your Investmen..." loading="lazy">
+    <div tabindex="0" role="link" aria-label="Instagram post 4 opens in a new tab" class="instafeed-new-layout-item-container abs-ig-media">
+      <div class="instafeed-hover-layer " data-feed-id="0-carousel_album" style="border-radius:6px;"><div class="instafeed-hover-icon"><img class="instafeed-lazy-image instafeed-lazy-image--handled" src="/assets/images/instagram/instagram-icon.svg" alt=""></div></div>
+    </div><div class="abs-ig-footer" data-abs-instagram-ui="footer"><div class="abs-ig-actions" data-abs-instagram-ui="actions"><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.8 4.8a5.5 5.5 0 0 0-7.8 0L12 5.8l-1-1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.4a5.5 5.5 0 0 0 0-7.8Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9.5 9.5 0 0 1-3.7-.8L3 21l1.8-5a8.4 8.4 0 1 1 16.2-4.5Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m22 2-9.5 20-2.1-8.4L2 10.5 22 2Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10.4 13.6 22 2" stroke="currentColor" stroke-width="1.55" stroke-linecap="round"></path></svg></span><span class="abs-ig-action abs-ig-action--bookmark"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 3.5h12v17L12 17l-6 3.5v-17Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div><p class="abs-ig-caption" data-abs-instagram-ui="caption">🏙️ 3 Reasons Why Real Estate Deserves a Place in Your Investment Portfolio! Smart investing isn’t just about growing your wealth. It’s about building a stronger financial future. ✅ Protection Against Inflation – Real estate has the potential to preserve and grow your wealth over time. ✅ Passive Income Potential – Generate rental income while benefiting from possible long-term property appreciation. ✅ Ownership &amp; Control – Invest in a tangible asset that gives you greater control over your financial future. At ABS Developers, we believe in creating real estate opportunities that combine quality, long-term value, and Shariah-compliant investment principles. Invest Wisely. Build Wealth. Secure Your Future. 📞 03-222-333-332 🌐 www.abs-developers.com #ABSDevelopers #RealEstateInvestment #InvestorEducation #PropertyInvestment #ShariahCompliantRealEstate</p></div></div>
+<div style="clip-path: inset(0px round 6px);" class="instafeed-new-layout-item abs-ig-card image-loaded" data-abs-instagram-permalink="https://www.instagram.com/p/Deg87skDoGF/"><div class="abs-ig-card-head" data-abs-instagram-ui="header"><span class="abs-ig-avatar" aria-hidden="true">ABS</span><span class="abs-ig-username">absdevelopers</span></div><img style="border-radius:6px;" class="instafeed-lazy-image instafeed-lazy-image--handled" src="/assets/images/instagram/post-05.jpg" alt="Instagram post with the caption: 🏙️ 3 Reasons Why Real Estate Deserves a Place in Your Investmen..." loading="lazy">
+    <div tabindex="0" role="link" aria-label="Instagram post 5 opens in a new tab" class="instafeed-new-layout-item-container abs-ig-media">
+      <div class="instafeed-hover-layer " data-feed-id="0-carousel_album" style="border-radius:6px;"><div class="instafeed-hover-icon"><img class="instafeed-lazy-image instafeed-lazy-image--handled" src="/assets/images/instagram/instagram-icon.svg" alt=""></div></div>
+    </div><div class="abs-ig-footer" data-abs-instagram-ui="footer"><div class="abs-ig-actions" data-abs-instagram-ui="actions"><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.8 4.8a5.5 5.5 0 0 0-7.8 0L12 5.8l-1-1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.4a5.5 5.5 0 0 0 0-7.8Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9.5 9.5 0 0 1-3.7-.8L3 21l1.8-5a8.4 8.4 0 1 1 16.2-4.5Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m22 2-9.5 20-2.1-8.4L2 10.5 22 2Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10.4 13.6 22 2" stroke="currentColor" stroke-width="1.55" stroke-linecap="round"></path></svg></span><span class="abs-ig-action abs-ig-action--bookmark"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 3.5h12v17L12 17l-6 3.5v-17Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div><p class="abs-ig-caption" data-abs-instagram-ui="caption">🏙️ 3 Reasons Why Real Estate Deserves a Place in Your Investment Portfolio! Smart investing isn’t just about growing your wealth. It’s about building a stronger financial future. ✅ Protection Against Inflation – Real estate has the potential to preserve and grow your wealth over time. ✅ Passive Income Potential – Generate rental income while benefiting from possible long-term property appreciation. ✅ Ownership &amp; Control – Invest in a tangible asset that gives you greater control over your financial future. At ABS Developers, we believe in creating real estate opportunities that combine quality, long-term value, and Shariah-compliant investment principles. Invest Wisely. Build Wealth. Secure Your Future. 📞 03-222-333-332 🌐 www.abs-developers.com #ABSDevelopers #RealEstateInvestment #InvestorEducation #PropertyInvestment #ShariahCompliantRealEstate</p></div></div>
+<div style="clip-path: inset(0px round 6px);" class="instafeed-new-layout-item abs-ig-card image-loaded" data-abs-instagram-permalink="https://www.instagram.com/p/Deg86ajDkTm/"><div class="abs-ig-card-head" data-abs-instagram-ui="header"><span class="abs-ig-avatar" aria-hidden="true">ABS</span><span class="abs-ig-username">absdevelopers</span></div><img style="border-radius:6px;" class="instafeed-lazy-image instafeed-lazy-image--handled" src="/assets/images/instagram/post-06.jpg" alt="Instagram post with the caption: 🏙️ 3 Reasons Why Real Estate Deserves a Place in Your Investmen..." loading="lazy">
+    <div tabindex="0" role="link" aria-label="Instagram post 6 opens in a new tab" class="instafeed-new-layout-item-container abs-ig-media">
+      <div class="instafeed-hover-layer " data-feed-id="0-carousel_album" style="border-radius:6px;"><div class="instafeed-hover-icon"><img class="instafeed-lazy-image instafeed-lazy-image--handled" src="/assets/images/instagram/instagram-icon.svg" alt=""></div></div>
+    </div><div class="abs-ig-footer" data-abs-instagram-ui="footer"><div class="abs-ig-actions" data-abs-instagram-ui="actions"><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.8 4.8a5.5 5.5 0 0 0-7.8 0L12 5.8l-1-1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.4a5.5 5.5 0 0 0 0-7.8Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9.5 9.5 0 0 1-3.7-.8L3 21l1.8-5a8.4 8.4 0 1 1 16.2-4.5Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m22 2-9.5 20-2.1-8.4L2 10.5 22 2Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10.4 13.6 22 2" stroke="currentColor" stroke-width="1.55" stroke-linecap="round"></path></svg></span><span class="abs-ig-action abs-ig-action--bookmark"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 3.5h12v17L12 17l-6 3.5v-17Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div><p class="abs-ig-caption" data-abs-instagram-ui="caption">🏙️ 3 Reasons Why Real Estate Deserves a Place in Your Investment Portfolio! Smart investing isn’t just about growing your wealth. It’s about building a stronger financial future. ✅ Protection Against Inflation – Real estate has the potential to preserve and grow your wealth over time. ✅ Passive Income Potential – Generate rental income while benefiting from possible long-term property appreciation. ✅ Ownership &amp; Control – Invest in a tangible asset that gives you greater control over your financial future. At ABS Developers, we believe in creating real estate opportunities that combine quality, long-term value, and Shariah-compliant investment principles. Invest Wisely. Build Wealth. Secure Your Future. 📞 03-222-333-332 🌐 www.abs-developers.com #ABSDevelopers #RealEstateInvestment #InvestorEducation #PropertyInvestment #ShariahCompliantRealEstate</p></div></div>
+<div style="clip-path: inset(0px round 6px);" class="instafeed-new-layout-item abs-ig-card image-loaded" data-abs-instagram-permalink="https://www.instagram.com/p/DegrKIxjhsX/"><div class="abs-ig-card-head" data-abs-instagram-ui="header"><span class="abs-ig-avatar" aria-hidden="true">ABS</span><span class="abs-ig-username">absdevelopers</span></div><img style="border-radius:6px;" class="instafeed-lazy-image instafeed-lazy-image--handled" src="/assets/images/instagram/post-07.jpg" alt="Instagram post with the caption: A Milestone of Trust. A Commitment Delivered! 🏙️🤝
+ABS Develope..." loading="lazy">
+    <div tabindex="0" role="link" aria-label="Instagram post 7 opens in a new tab" class="instafeed-new-layout-item-container abs-ig-media">
+      <div class="instafeed-hover-layer " data-feed-id="0-carousel_album" style="border-radius:6px;"><div class="instafeed-hover-icon"><img class="instafeed-lazy-image instafeed-lazy-image--handled" src="/assets/images/instagram/instagram-icon.svg" alt=""></div></div>
+    </div><div class="abs-ig-footer" data-abs-instagram-ui="footer"><div class="abs-ig-actions" data-abs-instagram-ui="actions"><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.8 4.8a5.5 5.5 0 0 0-7.8 0L12 5.8l-1-1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.4a5.5 5.5 0 0 0 0-7.8Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9.5 9.5 0 0 1-3.7-.8L3 21l1.8-5a8.4 8.4 0 1 1 16.2-4.5Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m22 2-9.5 20-2.1-8.4L2 10.5 22 2Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10.4 13.6 22 2" stroke="currentColor" stroke-width="1.55" stroke-linecap="round"></path></svg></span><span class="abs-ig-action abs-ig-action--bookmark"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 3.5h12v17L12 17l-6 3.5v-17Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div><p class="abs-ig-caption" data-abs-instagram-ui="caption">A Milestone of Trust. A Commitment Delivered! 🏙️🤝 ABS Developers proudly celebrates a landmark achievement with the successful Possession Handover to The University of Lahore at Pearl One Courtyard. This remarkable milestone reflects our unwavering dedication to excellence, institutional partnerships, and turning visionary commitments into reality. From ambitious beginnings to tangible achievements, we continue to build more than landmarks — we build trust, deliver promises, and shape the future of real estate in Pakistan. ABS Developers – A Pioneer in Shariah-Compliant Real Estate. 📞 03-222-333-332 🌐 www.abs-developers.com #ABSDevelopers #PearlOneCourtyard #UniversityOfLahore #PossessionHandover #LahoreRealEstate</p></div></div>
+<div style="clip-path: inset(0px round 6px);" class="instafeed-new-layout-item abs-ig-card image-loaded" data-abs-instagram-permalink="https://www.instagram.com/p/DegrI6rDmjG/"><div class="abs-ig-card-head" data-abs-instagram-ui="header"><span class="abs-ig-avatar" aria-hidden="true">ABS</span><span class="abs-ig-username">absdevelopers</span></div><img style="border-radius:6px;" class="instafeed-lazy-image instafeed-lazy-image--handled" src="/assets/images/instagram/post-08.jpg" alt="Instagram post with the caption: A Milestone of Trust. A Commitment Delivered! 🏙️🤝
+ABS Develope..." loading="lazy">
+    <div tabindex="0" role="link" aria-label="Instagram post 8 opens in a new tab" class="instafeed-new-layout-item-container abs-ig-media">
+      <div class="instafeed-hover-layer " data-feed-id="0-carousel_album" style="border-radius:6px;"><div class="instafeed-hover-icon"><img class="instafeed-lazy-image instafeed-lazy-image--handled" src="/assets/images/instagram/instagram-icon.svg" alt=""></div></div>
+    </div><div class="abs-ig-footer" data-abs-instagram-ui="footer"><div class="abs-ig-actions" data-abs-instagram-ui="actions"><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.8 4.8a5.5 5.5 0 0 0-7.8 0L12 5.8l-1-1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.4a5.5 5.5 0 0 0 0-7.8Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9.5 9.5 0 0 1-3.7-.8L3 21l1.8-5a8.4 8.4 0 1 1 16.2-4.5Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m22 2-9.5 20-2.1-8.4L2 10.5 22 2Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10.4 13.6 22 2" stroke="currentColor" stroke-width="1.55" stroke-linecap="round"></path></svg></span><span class="abs-ig-action abs-ig-action--bookmark"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 3.5h12v17L12 17l-6 3.5v-17Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div><p class="abs-ig-caption" data-abs-instagram-ui="caption">A Milestone of Trust. A Commitment Delivered! 🏙️🤝 ABS Developers proudly celebrates a landmark achievement with the successful Possession Handover to The University of Lahore at Pearl One Courtyard. This remarkable milestone reflects our unwavering dedication to excellence, institutional partnerships, and turning visionary commitments into reality. From ambitious beginnings to tangible achievements, we continue to build more than landmarks — we build trust, deliver promises, and shape the future of real estate in Pakistan. ABS Developers – A Pioneer in Shariah-Compliant Real Estate. 📞 03-222-333-332 🌐 www.abs-developers.com #ABSDevelopers #PearlOneCourtyard #UniversityOfLahore #PossessionHandover #LahoreRealEstate</p></div></div>
+<div style="clip-path: inset(0px round 6px);" class="instafeed-new-layout-item abs-ig-card image-loaded" data-abs-instagram-permalink="https://www.instagram.com/p/DegrH4QDnA8/"><div class="abs-ig-card-head" data-abs-instagram-ui="header"><span class="abs-ig-avatar" aria-hidden="true">ABS</span><span class="abs-ig-username">absdevelopers</span></div><img style="border-radius:6px;" class="instafeed-lazy-image instafeed-lazy-image--handled" src="/assets/images/instagram/post-09.jpg" alt="Instagram post with the caption: A Milestone of Trust. A Commitment Delivered! 🏙️🤝
+ABS Develope..." loading="lazy">
+    <div tabindex="0" role="link" aria-label="Instagram post 9 opens in a new tab" class="instafeed-new-layout-item-container abs-ig-media">
+      <div class="instafeed-hover-layer " data-feed-id="0-carousel_album" style="border-radius:6px;"><div class="instafeed-hover-icon"><img class="instafeed-lazy-image instafeed-lazy-image--handled" src="/assets/images/instagram/instagram-icon.svg" alt=""></div></div>
+    </div><div class="abs-ig-footer" data-abs-instagram-ui="footer"><div class="abs-ig-actions" data-abs-instagram-ui="actions"><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.8 4.8a5.5 5.5 0 0 0-7.8 0L12 5.8l-1-1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.4a5.5 5.5 0 0 0 0-7.8Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9.5 9.5 0 0 1-3.7-.8L3 21l1.8-5a8.4 8.4 0 1 1 16.2-4.5Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m22 2-9.5 20-2.1-8.4L2 10.5 22 2Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10.4 13.6 22 2" stroke="currentColor" stroke-width="1.55" stroke-linecap="round"></path></svg></span><span class="abs-ig-action abs-ig-action--bookmark"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 3.5h12v17L12 17l-6 3.5v-17Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div><p class="abs-ig-caption" data-abs-instagram-ui="caption">A Milestone of Trust. A Commitment Delivered! 🏙️🤝 ABS Developers proudly celebrates a landmark achievement with the successful Possession Handover to The University of Lahore at Pearl One Courtyard. This remarkable milestone reflects our unwavering dedication to excellence, institutional partnerships, and turning visionary commitments into reality. From ambitious beginnings to tangible achievements, we continue to build more than landmarks — we build trust, deliver promises, and shape the future of real estate in Pakistan. ABS Developers – A Pioneer in Shariah-Compliant Real Estate. 📞 03-222-333-332 🌐 www.abs-developers.com #ABSDevelopers #PearlOneCourtyard #UniversityOfLahore #PossessionHandover #LahoreRealEstate</p></div></div>
+<div style="clip-path: inset(0px round 6px);" class="instafeed-new-layout-item abs-ig-card image-loaded" data-abs-instagram-permalink="https://www.instagram.com/reel/DeeTt53ujaH/"><div class="abs-ig-card-head" data-abs-instagram-ui="header"><span class="abs-ig-avatar" aria-hidden="true">ABS</span><span class="abs-ig-username">absdevelopers</span></div><img style="border-radius:6px;" class="instafeed-lazy-image instafeed-lazy-image--handled" src="/assets/images/instagram/post-10.jpg" alt="Instagram post with the caption: 🏙️ A GRAND MILESTONE. AN EXCLUSIVE OFFER. YOUR NEW ADDRESS AWAI..." loading="lazy">
+    <div tabindex="0" role="link" aria-label="Instagram post 10 opens in a new tab" class="instafeed-new-layout-item-container abs-ig-media">
+      <div class="instafeed-hover-layer " data-feed-id="0-video" style="border-radius:6px;"><div class="instafeed-hover-icon"><img class="instafeed-lazy-image instafeed-lazy-image--handled" src="/assets/images/instagram/instagram-icon.svg" alt=""></div></div>
+    </div><div class="abs-ig-footer" data-abs-instagram-ui="footer"><div class="abs-ig-actions" data-abs-instagram-ui="actions"><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.8 4.8a5.5 5.5 0 0 0-7.8 0L12 5.8l-1-1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.4a5.5 5.5 0 0 0 0-7.8Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9.5 9.5 0 0 1-3.7-.8L3 21l1.8-5a8.4 8.4 0 1 1 16.2-4.5Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m22 2-9.5 20-2.1-8.4L2 10.5 22 2Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10.4 13.6 22 2" stroke="currentColor" stroke-width="1.55" stroke-linecap="round"></path></svg></span><span class="abs-ig-action abs-ig-action--bookmark"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 3.5h12v17L12 17l-6 3.5v-17Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div><p class="abs-ig-caption" data-abs-instagram-ui="caption">🏙️ A GRAND MILESTONE. AN EXCLUSIVE OFFER. YOUR NEW ADDRESS AWAITS! 🎉 To celebrate the successful possession handover to The University of Lahore at Pearl One Courtyard, ABS Developers brings you an exceptional opportunity to own your dream apartment with an EXCLUSIVE 10% FLAT DISCOUNT! 🏡 1-Bed Apartment – Book with just PKR 20 Lakh Down Payment 🏡 2-Bed Apartment – Book with just PKR 35 Lakh Down Payment 🎁 ENJOY 10% FLAT OFF! 📅 Offer Valid Until 25th October 2026 A milestone built on trust. An opportunity designed for you. Make your move toward premium living at Pearl One Courtyard today! ABS Developers – A Pioneer in Shariah-Compliant Real Estate. 📞 03-222-333-332 🌐 www.abs-developers.com Limited-time offer. Terms and conditions apply. #PearlOneCourtyard #ABSDevelopers #10PercentDiscount #LuxuryApartmentsLahore #LahoreRealEstate</p></div></div>
+<div style="clip-path: inset(0px round 6px);" class="instafeed-new-layout-item abs-ig-card image-loaded" data-abs-instagram-permalink="https://www.instagram.com/reel/DeeIeqcuBM1/"><div class="abs-ig-card-head" data-abs-instagram-ui="header"><span class="abs-ig-avatar" aria-hidden="true">ABS</span><span class="abs-ig-username">absdevelopers</span></div><img style="border-radius:6px;" class="instafeed-lazy-image instafeed-lazy-image--handled" src="/assets/images/instagram/post-11.jpg" alt="Instagram post with the caption: Behind Every Landmark Is a Team Driven by Excellence! 🏙️🤝
+
+Eve..." loading="lazy">
+    <div tabindex="0" role="link" aria-label="Instagram post 11 opens in a new tab" class="instafeed-new-layout-item-container abs-ig-media">
+      <div class="instafeed-hover-layer " data-feed-id="0-video" style="border-radius:6px;"><div class="instafeed-hover-icon"><img class="instafeed-lazy-image instafeed-lazy-image--handled" src="/assets/images/instagram/instagram-icon.svg" alt=""></div></div>
+    </div><div class="abs-ig-footer" data-abs-instagram-ui="footer"><div class="abs-ig-actions" data-abs-instagram-ui="actions"><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.8 4.8a5.5 5.5 0 0 0-7.8 0L12 5.8l-1-1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.4a5.5 5.5 0 0 0 0-7.8Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9.5 9.5 0 0 1-3.7-.8L3 21l1.8-5a8.4 8.4 0 1 1 16.2-4.5Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m22 2-9.5 20-2.1-8.4L2 10.5 22 2Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10.4 13.6 22 2" stroke="currentColor" stroke-width="1.55" stroke-linecap="round"></path></svg></span><span class="abs-ig-action abs-ig-action--bookmark"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 3.5h12v17L12 17l-6 3.5v-17Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div><p class="abs-ig-caption" data-abs-instagram-ui="caption">Behind Every Landmark Is a Team Driven by Excellence! 🏙️🤝 Every great achievement begins with a vision, strengthened by teamwork, dedication, and a relentless commitment to excellence. At ABS Developers, every discussion, every decision, and every effort brings us closer to transforming ambitious visions into extraordinary realities. From strategic planning to seamless execution, our teams work together with one mission — to build trust, deliver commitments, and redefine the future of real estate in Pakistan. ABS Developers — Where Vision Meets Execution. 🌐 www.abs-developers.com 📞 03-222-333-332 #ABSDevelopers #TeamABS #BehindTheScenes #RealEstatePakistan #BuildingTheFuture</p></div></div>
+<div style="clip-path: inset(0px round 6px);" class="instafeed-new-layout-item abs-ig-card image-loaded" data-abs-instagram-permalink="https://www.instagram.com/reel/DeeB29MO62b/"><div class="abs-ig-card-head" data-abs-instagram-ui="header"><span class="abs-ig-avatar" aria-hidden="true">ABS</span><span class="abs-ig-username">absdevelopers</span></div><img style="border-radius:6px;" class="instafeed-lazy-image instafeed-lazy-image--handled" src="/assets/images/instagram/post-12.jpg" alt="Instagram post with the caption: A Vision Delivered. A Commitment Fulfilled! 🏗️🤝
+
+A proud and d..." loading="lazy">
+    <div tabindex="0" role="link" aria-label="Instagram post 12 opens in a new tab" class="instafeed-new-layout-item-container abs-ig-media">
+      <div class="instafeed-hover-layer " data-feed-id="0-video" style="border-radius:6px;"><div class="instafeed-hover-icon"><img class="instafeed-lazy-image instafeed-lazy-image--handled" src="/assets/images/instagram/instagram-icon.svg" alt=""></div></div>
+    </div><div class="abs-ig-footer" data-abs-instagram-ui="footer"><div class="abs-ig-actions" data-abs-instagram-ui="actions"><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.8 4.8a5.5 5.5 0 0 0-7.8 0L12 5.8l-1-1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.4a5.5 5.5 0 0 0 0-7.8Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9.5 9.5 0 0 1-3.7-.8L3 21l1.8-5a8.4 8.4 0 1 1 16.2-4.5Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m22 2-9.5 20-2.1-8.4L2 10.5 22 2Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10.4 13.6 22 2" stroke="currentColor" stroke-width="1.55" stroke-linecap="round"></path></svg></span><span class="abs-ig-action abs-ig-action--bookmark"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 3.5h12v17L12 17l-6 3.5v-17Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div><p class="abs-ig-caption" data-abs-instagram-ui="caption">A Vision Delivered. A Commitment Fulfilled! 🏗️🤝 A proud and defining moment for ABS Developers as Dr. Subayyal Ikram, Chief Executive Officer of ABS Developers, addresses the prestigious possession handover ceremony to The University of Lahore at Pearl One Courtyard. Reflecting on this significant achievement, the occasion highlights ABS Developers’ unwavering dedication to fulfilling commitments, strengthening institutional partnerships, and transforming ambitious visions into tangible realities. This milestone is not just about handing over possession; it represents the trust, determination, and shared vision that continue to drive ABS Developers toward greater achievements. At ABS Developers, we don’t just make promises. We deliver them. 🌐 www.abs-developers.com 📞 03-222-333-332 #ABSDevelopers #PearlOneCourtyard #TheUniversityOfLahore #PossessionHandover #BuildingTrust</p></div></div>
+<div style="clip-path: inset(0px round 6px);" class="instafeed-new-layout-item abs-ig-card image-loaded" data-abs-instagram-permalink="https://www.instagram.com/reel/Deb5YFXzzf8/"><div class="abs-ig-card-head" data-abs-instagram-ui="header"><span class="abs-ig-avatar" aria-hidden="true">ABS</span><span class="abs-ig-username">absdevelopers</span></div><img style="border-radius:6px;" class="instafeed-lazy-image instafeed-lazy-image--handled" src="/assets/images/instagram/post-13.jpg" alt="Instagram post with the caption: A Landmark Partnership. A Shared Vision for the Future! 🎓🤝
+
+A ..." loading="lazy">
+    <div tabindex="0" role="link" aria-label="Instagram post 13 opens in a new tab" class="instafeed-new-layout-item-container abs-ig-media">
+      <div class="instafeed-hover-layer " data-feed-id="0-video" style="border-radius:6px;"><div class="instafeed-hover-icon"><img class="instafeed-lazy-image instafeed-lazy-image--handled" src="/assets/images/instagram/instagram-icon.svg" alt=""></div></div>
+    </div><div class="abs-ig-footer" data-abs-instagram-ui="footer"><div class="abs-ig-actions" data-abs-instagram-ui="actions"><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.8 4.8a5.5 5.5 0 0 0-7.8 0L12 5.8l-1-1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.4a5.5 5.5 0 0 0 0-7.8Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9.5 9.5 0 0 1-3.7-.8L3 21l1.8-5a8.4 8.4 0 1 1 16.2-4.5Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m22 2-9.5 20-2.1-8.4L2 10.5 22 2Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10.4 13.6 22 2" stroke="currentColor" stroke-width="1.55" stroke-linecap="round"></path></svg></span><span class="abs-ig-action abs-ig-action--bookmark"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 3.5h12v17L12 17l-6 3.5v-17Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div><p class="abs-ig-caption" data-abs-instagram-ui="caption">A Landmark Partnership. A Shared Vision for the Future! 🎓🤝 A defining moment for Pearl One Courtyard as Mr. Awais Raoof, Chairman of The University of Lahore, addresses the prestigious possession handover ceremony. His presence and remarks mark a significant milestone in the collaboration between The University of Lahore and ABS Developers, bringing together educational excellence and visionary real estate development. This remarkable occasion reflects a growing partnership built on trust, shared ambitions, and a commitment to creating lasting value for future generations. ABS Developers — Turning Commitments into Milestones. 🌐 www.abs-developers.com 📞 03-222-333-332 #ABSDevelopers #PearlOneCourtyard #TheUniversityOfLahore #PossessionHandover #BuildingTrust</p></div></div>
+<div style="clip-path: inset(0px round 6px);" class="instafeed-new-layout-item abs-ig-card image-loaded" data-abs-instagram-permalink="https://www.instagram.com/p/DebzEk8DGfs/"><div class="abs-ig-card-head" data-abs-instagram-ui="header"><span class="abs-ig-avatar" aria-hidden="true">ABS</span><span class="abs-ig-username">absdevelopers</span></div><img style="border-radius:6px;" class="instafeed-lazy-image instafeed-lazy-image--handled" src="/assets/images/instagram/post-14.jpg" alt="Instagram post with the caption: A Vision Strengthened by Trust &amp;amp; Partnership! 🎓🤝
+
+A proud ..." loading="lazy">
+    <div tabindex="0" role="link" aria-label="Instagram post 14 opens in a new tab" class="instafeed-new-layout-item-container abs-ig-media">
+      <div class="instafeed-hover-layer " data-feed-id="0-carousel_album" style="border-radius:6px;"><div class="instafeed-hover-icon"><img class="instafeed-lazy-image instafeed-lazy-image--handled" src="/assets/images/instagram/instagram-icon.svg" alt=""></div></div>
+    </div><div class="abs-ig-footer" data-abs-instagram-ui="footer"><div class="abs-ig-actions" data-abs-instagram-ui="actions"><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.8 4.8a5.5 5.5 0 0 0-7.8 0L12 5.8l-1-1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.4a5.5 5.5 0 0 0 0-7.8Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9.5 9.5 0 0 1-3.7-.8L3 21l1.8-5a8.4 8.4 0 1 1 16.2-4.5Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m22 2-9.5 20-2.1-8.4L2 10.5 22 2Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10.4 13.6 22 2" stroke="currentColor" stroke-width="1.55" stroke-linecap="round"></path></svg></span><span class="abs-ig-action abs-ig-action--bookmark"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 3.5h12v17L12 17l-6 3.5v-17Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div><p class="abs-ig-caption" data-abs-instagram-ui="caption">A Vision Strengthened by Trust &amp; Partnership! 🎓🤝 A proud moment for ABS Developers as The University of Lahore officially becomes part of Pearl One Courtyard through a landmark possession handover. This milestone represents more than a handover. It reflects a shared vision, institutional confidence, and our continued commitment to delivering meaningful developments. ABS Developers — Building Beyond Expectations. 🌐 www.abs-developers.com 📞 03-222-333-332 #ABSDevelopers #PearlOneCourtyard #TheUniversityOfLahore #PossessionHandover #BuildingTrust</p></div></div>
+<div style="clip-path: inset(0px round 6px);" class="instafeed-new-layout-item abs-ig-card image-loaded" data-abs-instagram-permalink="https://www.instagram.com/reel/DebwaI8upIR/"><div class="abs-ig-card-head" data-abs-instagram-ui="header"><span class="abs-ig-avatar" aria-hidden="true">ABS</span><span class="abs-ig-username">absdevelopers</span></div><img style="border-radius:6px;" class="instafeed-lazy-image instafeed-lazy-image--handled" src="/assets/images/instagram/post-15.jpg" alt="Instagram post with the caption: A PROUD MILESTONE. A VISIONARY PARTNERSHIP. 🎓🏙️
+
+On the remark..." loading="lazy">
+    <div tabindex="0" role="link" aria-label="Instagram post 15 opens in a new tab" class="instafeed-new-layout-item-container abs-ig-media">
+      <div class="instafeed-hover-layer " data-feed-id="0-video" style="border-radius:6px;"><div class="instafeed-hover-icon"><img class="instafeed-lazy-image instafeed-lazy-image--handled" src="/assets/images/instagram/instagram-icon.svg" alt=""></div></div>
+    </div><div class="abs-ig-footer" data-abs-instagram-ui="footer"><div class="abs-ig-actions" data-abs-instagram-ui="actions"><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.8 4.8a5.5 5.5 0 0 0-7.8 0L12 5.8l-1-1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.4a5.5 5.5 0 0 0 0-7.8Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9.5 9.5 0 0 1-3.7-.8L3 21l1.8-5a8.4 8.4 0 1 1 16.2-4.5Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m22 2-9.5 20-2.1-8.4L2 10.5 22 2Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10.4 13.6 22 2" stroke="currentColor" stroke-width="1.55" stroke-linecap="round"></path></svg></span><span class="abs-ig-action abs-ig-action--bookmark"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 3.5h12v17L12 17l-6 3.5v-17Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div><p class="abs-ig-caption" data-abs-instagram-ui="caption">A PROUD MILESTONE. A VISIONARY PARTNERSHIP. 🎓🏙️ On the remarkable occasion of the possession handover ceremony to The University of Lahore at Pearl One Courtyard, Dr. Humbal Ikram, Managing Director of ABS Developers, shared his inspiring remarks on the significance of welcoming one of Pakistan’s leading educational institutions into this landmark development. He expressed his pride and excitement in seeing The University of Lahore become an integral part of Pearl One Courtyard, marking a meaningful step toward bringing education, innovation, and modern urban development together under one visionary project. At ABS Developers, we don’t just build structures. We create destinations that inspire generations. 🌐 www.abs-developers.com 📞 03-222-333-332 #ABSDevelopers #PearlOneCourtyard #TheUniversityOfLahore #PossessionHandover #BuildingTheFuture</p></div></div>
+<div style="clip-path: inset(0px round 6px);" class="instafeed-new-layout-item abs-ig-card image-loaded" data-abs-instagram-permalink="https://www.instagram.com/p/DebugOJDrWG/"><div class="abs-ig-card-head" data-abs-instagram-ui="header"><span class="abs-ig-avatar" aria-hidden="true">ABS</span><span class="abs-ig-username">absdevelopers</span></div><img style="border-radius:6px;" class="instafeed-lazy-image instafeed-lazy-image--handled" src="/assets/images/instagram/post-16.jpg" alt="Instagram post with the caption: YOUR JOURNEY TO LUXURY BEGINS HERE! 🏙️✨
+
+A new era of architect..." loading="lazy">
+    <div tabindex="0" role="link" aria-label="Instagram post 16 opens in a new tab" class="instafeed-new-layout-item-container abs-ig-media">
+      <div class="instafeed-hover-layer " data-feed-id="0-carousel_album" style="border-radius:6px;"><div class="instafeed-hover-icon"><img class="instafeed-lazy-image instafeed-lazy-image--handled" src="/assets/images/instagram/instagram-icon.svg" alt=""></div></div>
+    </div><div class="abs-ig-footer" data-abs-instagram-ui="footer"><div class="abs-ig-actions" data-abs-instagram-ui="actions"><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.8 4.8a5.5 5.5 0 0 0-7.8 0L12 5.8l-1-1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.4a5.5 5.5 0 0 0 0-7.8Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9.5 9.5 0 0 1-3.7-.8L3 21l1.8-5a8.4 8.4 0 1 1 16.2-4.5Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m22 2-9.5 20-2.1-8.4L2 10.5 22 2Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10.4 13.6 22 2" stroke="currentColor" stroke-width="1.55" stroke-linecap="round"></path></svg></span><span class="abs-ig-action abs-ig-action--bookmark"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 3.5h12v17L12 17l-6 3.5v-17Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div><p class="abs-ig-caption" data-abs-instagram-ui="caption">YOUR JOURNEY TO LUXURY BEGINS HERE! 🏙️✨ A new era of architectural excellence is rising in DHA City Karachi! Introducing Burj Quaid, Pakistan’s tallest planned skyscraper, soaring 941 feet (287 meters) across 82 storeys, redefining luxury, ambition, and modern urban living. With construction officially underway, the vision of an extraordinary landmark is becoming a reality. Burj Quaid – Where Pakistan Touches the Sky! 📍 DHA City, Karachi 📞 03-222-333-332 🌐 www.abs-developers.com #BurjQuaid #ABSDevelopers #PakistanTallestTower #DHACityKarachi #LuxuryRealEstate</p></div></div>
+<div style="clip-path: inset(0px round 6px);" class="instafeed-new-layout-item abs-ig-card image-loaded" data-abs-instagram-permalink="https://www.instagram.com/p/Debue_BjiPQ/"><div class="abs-ig-card-head" data-abs-instagram-ui="header"><span class="abs-ig-avatar" aria-hidden="true">ABS</span><span class="abs-ig-username">absdevelopers</span></div><img style="border-radius:6px;" class="instafeed-lazy-image instafeed-lazy-image--handled" src="/assets/images/instagram/post-17.jpg" alt="Instagram post with the caption: YOUR JOURNEY TO LUXURY BEGINS HERE! 🏙️✨
+
+A new era of architect..." loading="lazy">
+    <div tabindex="0" role="link" aria-label="Instagram post 17 opens in a new tab" class="instafeed-new-layout-item-container abs-ig-media">
+      <div class="instafeed-hover-layer " data-feed-id="0-carousel_album" style="border-radius:6px;"><div class="instafeed-hover-icon"><img class="instafeed-lazy-image instafeed-lazy-image--handled" src="/assets/images/instagram/instagram-icon.svg" alt=""></div></div>
+    </div><div class="abs-ig-footer" data-abs-instagram-ui="footer"><div class="abs-ig-actions" data-abs-instagram-ui="actions"><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.8 4.8a5.5 5.5 0 0 0-7.8 0L12 5.8l-1-1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.4a5.5 5.5 0 0 0 0-7.8Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9.5 9.5 0 0 1-3.7-.8L3 21l1.8-5a8.4 8.4 0 1 1 16.2-4.5Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m22 2-9.5 20-2.1-8.4L2 10.5 22 2Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10.4 13.6 22 2" stroke="currentColor" stroke-width="1.55" stroke-linecap="round"></path></svg></span><span class="abs-ig-action abs-ig-action--bookmark"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 3.5h12v17L12 17l-6 3.5v-17Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div><p class="abs-ig-caption" data-abs-instagram-ui="caption">YOUR JOURNEY TO LUXURY BEGINS HERE! 🏙️✨ A new era of architectural excellence is rising in DHA City Karachi! Introducing Burj Quaid, Pakistan’s tallest planned skyscraper, soaring 941 feet (287 meters) across 82 storeys, redefining luxury, ambition, and modern urban living. With construction officially underway, the vision of an extraordinary landmark is becoming a reality. Burj Quaid – Where Pakistan Touches the Sky! 📍 DHA City, Karachi 📞 03-222-333-332 🌐 www.abs-developers.com #BurjQuaid #ABSDevelopers #PakistanTallestTower #DHACityKarachi #LuxuryRealEstate</p></div></div>
+<div style="clip-path: inset(0px round 6px);" class="instafeed-new-layout-item abs-ig-card image-loaded" data-abs-instagram-permalink="https://www.instagram.com/p/Debudp_jkXq/"><div class="abs-ig-card-head" data-abs-instagram-ui="header"><span class="abs-ig-avatar" aria-hidden="true">ABS</span><span class="abs-ig-username">absdevelopers</span></div><img style="border-radius:6px;" class="instafeed-lazy-image instafeed-lazy-image--handled" src="/assets/images/instagram/post-18.jpg" alt="Instagram post with the caption: YOUR JOURNEY TO LUXURY BEGINS HERE! 🏙️✨
+
+A new era of architect..." loading="lazy">
+    <div tabindex="0" role="link" aria-label="Instagram post 18 opens in a new tab" class="instafeed-new-layout-item-container abs-ig-media">
+      <div class="instafeed-hover-layer " data-feed-id="0-carousel_album" style="border-radius:6px;"><div class="instafeed-hover-icon"><img class="instafeed-lazy-image instafeed-lazy-image--handled" src="/assets/images/instagram/instagram-icon.svg" alt=""></div></div>
+    </div><div class="abs-ig-footer" data-abs-instagram-ui="footer"><div class="abs-ig-actions" data-abs-instagram-ui="actions"><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.8 4.8a5.5 5.5 0 0 0-7.8 0L12 5.8l-1-1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.4a5.5 5.5 0 0 0 0-7.8Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9.5 9.5 0 0 1-3.7-.8L3 21l1.8-5a8.4 8.4 0 1 1 16.2-4.5Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m22 2-9.5 20-2.1-8.4L2 10.5 22 2Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10.4 13.6 22 2" stroke="currentColor" stroke-width="1.55" stroke-linecap="round"></path></svg></span><span class="abs-ig-action abs-ig-action--bookmark"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 3.5h12v17L12 17l-6 3.5v-17Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div><p class="abs-ig-caption" data-abs-instagram-ui="caption">YOUR JOURNEY TO LUXURY BEGINS HERE! 🏙️✨ A new era of architectural excellence is rising in DHA City Karachi! Introducing Burj Quaid, Pakistan’s tallest planned skyscraper, soaring 941 feet (287 meters) across 82 storeys, redefining luxury, ambition, and modern urban living. With construction officially underway, the vision of an extraordinary landmark is becoming a reality. Burj Quaid – Where Pakistan Touches the Sky! 📍 DHA City, Karachi 📞 03-222-333-332 🌐 www.abs-developers.com #BurjQuaid #ABSDevelopers #PakistanTallestTower #DHACityKarachi #LuxuryRealEstate</p></div></div>
+<div style="clip-path: inset(0px round 6px);" class="instafeed-new-layout-item abs-ig-card image-loaded" data-abs-instagram-permalink="https://www.instagram.com/reel/Debn_HgOZzM/"><div class="abs-ig-card-head" data-abs-instagram-ui="header"><span class="abs-ig-avatar" aria-hidden="true">ABS</span><span class="abs-ig-username">absdevelopers</span></div><img style="border-radius:6px;" class="instafeed-lazy-image instafeed-lazy-image--handled" src="/assets/images/instagram/post-19.jpg" alt="Instagram post with the caption: A MILESTONE WORTH CELEBRATING. AN OFFER YOU CAN’T MISS! 🏙️🎉
+
+C..." loading="lazy">
+    <div tabindex="0" role="link" aria-label="Instagram post 19 opens in a new tab" class="instafeed-new-layout-item-container abs-ig-media">
+      <div class="instafeed-hover-layer " data-feed-id="0-video" style="border-radius:6px;"><div class="instafeed-hover-icon"><img class="instafeed-lazy-image instafeed-lazy-image--handled" src="/assets/images/instagram/instagram-icon.svg" alt=""></div></div>
+    </div><div class="abs-ig-footer" data-abs-instagram-ui="footer"><div class="abs-ig-actions" data-abs-instagram-ui="actions"><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.8 4.8a5.5 5.5 0 0 0-7.8 0L12 5.8l-1-1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.4a5.5 5.5 0 0 0 0-7.8Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9.5 9.5 0 0 1-3.7-.8L3 21l1.8-5a8.4 8.4 0 1 1 16.2-4.5Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m22 2-9.5 20-2.1-8.4L2 10.5 22 2Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10.4 13.6 22 2" stroke="currentColor" stroke-width="1.55" stroke-linecap="round"></path></svg></span><span class="abs-ig-action abs-ig-action--bookmark"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 3.5h12v17L12 17l-6 3.5v-17Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div><p class="abs-ig-caption" data-abs-instagram-ui="caption">A MILESTONE WORTH CELEBRATING. AN OFFER YOU CAN’T MISS! 🏙️🎉 Celebrating the successful possession handover to The University of Lahore at Pearl One Courtyard, ABS Developers is delighted to announce an EXCLUSIVE 10% FLAT DISCOUNT! Whether you’re looking for a premium commercial outlet or a luxurious residential apartment, this is your opportunity to secure your space at an exceptional value. 🎁 10% FLAT OFF on Commercial &amp; Residential Units 📅 Offer Valid Until 25th October 2026 Celebrate this remarkable milestone with us and take the next step toward owning your dream property! ABS Developers – A Pioneer in Shariah-Compliant Real Estate. 📞 03-222-333-332 🌐 www.abs-developers.com Limited-time offer. Terms and conditions apply. #PearlOneCourtyard #ABSDevelopers #PossessionHandover #LahoreRealEstate #InvestmentOpportunity</p></div></div>
+<div style="clip-path: inset(0px round 6px);" class="instafeed-new-layout-item abs-ig-card image-loaded" data-abs-instagram-permalink="https://www.instagram.com/reel/Deblnu7Oag0/"><div class="abs-ig-card-head" data-abs-instagram-ui="header"><span class="abs-ig-avatar" aria-hidden="true">ABS</span><span class="abs-ig-username">absdevelopers</span></div><img style="border-radius:6px;" class="instafeed-lazy-image instafeed-lazy-image--handled" src="/assets/images/instagram/post-20.jpg" alt="Instagram post with the caption: AN ICONIC VISION. A LANDMARK ACHIEVEMENT. ✨
+
+Introducing the arc..." loading="lazy">
+    <div tabindex="0" role="link" aria-label="Instagram post 20 opens in a new tab" class="instafeed-new-layout-item-container abs-ig-media">
+      <div class="instafeed-hover-layer " data-feed-id="0-video" style="border-radius:6px;"><div class="instafeed-hover-icon"><img class="instafeed-lazy-image instafeed-lazy-image--handled" src="/assets/images/instagram/instagram-icon.svg" alt=""></div></div>
+    </div><div class="abs-ig-footer" data-abs-instagram-ui="footer"><div class="abs-ig-actions" data-abs-instagram-ui="actions"><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.8 4.8a5.5 5.5 0 0 0-7.8 0L12 5.8l-1-1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.4a5.5 5.5 0 0 0 0-7.8Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9.5 9.5 0 0 1-3.7-.8L3 21l1.8-5a8.4 8.4 0 1 1 16.2-4.5Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m22 2-9.5 20-2.1-8.4L2 10.5 22 2Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10.4 13.6 22 2" stroke="currentColor" stroke-width="1.55" stroke-linecap="round"></path></svg></span><span class="abs-ig-action abs-ig-action--bookmark"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 3.5h12v17L12 17l-6 3.5v-17Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div><p class="abs-ig-caption" data-abs-instagram-ui="caption">AN ICONIC VISION. A LANDMARK ACHIEVEMENT. ✨ Introducing the architectural magnificence of Pearl One Courtyard – Tower 2, redefining Lahore’s skyline with timeless elegance, modern luxury, and extraordinary ambition. Marking another significant milestone, ABS Developers proudly announces the successful handover of possession to The University of Lahore, reflecting our commitment to transforming visionary developments into tangible achievements. The future of Lahore’s skyline is taking shape. 🏙️ 📞 03-222-333-332 🌐 www.abs-developers.com #PearlOneCourtyard #ABSDevelopers #TheUniversityOfLahore #LahoreRealEstate #LuxuryLiving</p></div></div>
+<div style="clip-path: inset(0px round 6px);" class="instafeed-new-layout-item abs-ig-card image-loaded" data-abs-instagram-permalink="https://www.instagram.com/reel/Debhw-eOtjT/"><div class="abs-ig-card-head" data-abs-instagram-ui="header"><span class="abs-ig-avatar" aria-hidden="true">ABS</span><span class="abs-ig-username">absdevelopers</span></div><img style="border-radius:6px;" class="instafeed-lazy-image instafeed-lazy-image--handled" src="/assets/images/instagram/post-21.jpg" alt="Instagram post with the caption: A Milestone of Trust, Commitment &amp;amp; Progress! 🏗️🤝
+
+ABS Deve..." loading="lazy">
+    <div tabindex="0" role="link" aria-label="Instagram post 21 opens in a new tab" class="instafeed-new-layout-item-container abs-ig-media">
+      <div class="instafeed-hover-layer " data-feed-id="0-video" style="border-radius:6px;"><div class="instafeed-hover-icon"><img class="instafeed-lazy-image instafeed-lazy-image--handled" src="/assets/images/instagram/instagram-icon.svg" alt=""></div></div>
+    </div><div class="abs-ig-footer" data-abs-instagram-ui="footer"><div class="abs-ig-actions" data-abs-instagram-ui="actions"><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.8 4.8a5.5 5.5 0 0 0-7.8 0L12 5.8l-1-1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.4a5.5 5.5 0 0 0 0-7.8Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9.5 9.5 0 0 1-3.7-.8L3 21l1.8-5a8.4 8.4 0 1 1 16.2-4.5Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m22 2-9.5 20-2.1-8.4L2 10.5 22 2Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10.4 13.6 22 2" stroke="currentColor" stroke-width="1.55" stroke-linecap="round"></path></svg></span><span class="abs-ig-action abs-ig-action--bookmark"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 3.5h12v17L12 17l-6 3.5v-17Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div><p class="abs-ig-caption" data-abs-instagram-ui="caption">A Milestone of Trust, Commitment &amp; Progress! 🏗️🤝 ABS Developers proudly marks another significant achievement with the Possession Handover to The University of Lahore at Pearl One Courtyard. This milestone reflects our commitment to delivering on promises, building lasting institutional partnerships, and transforming ambitious visions into reality. At ABS Developers, we don’t just build structures. We deliver commitments. 🌐 www.abs-developers.com 📞 03-222-333-332 #ABSDevelopers #PearlOneCourtyard #UniversityOfLahore #PossessionHandover #BuildingTrust</p></div></div>
+<div style="clip-path: inset(0px round 6px);" class="instafeed-new-layout-item abs-ig-card image-loaded" data-abs-instagram-permalink="https://www.instagram.com/p/DeZp3JyjpW8/"><div class="abs-ig-card-head" data-abs-instagram-ui="header"><span class="abs-ig-avatar" aria-hidden="true">ABS</span><span class="abs-ig-username">absdevelopers</span></div><img style="border-radius:6px;" class="instafeed-lazy-image instafeed-lazy-image--handled" src="/assets/images/instagram/post-22.jpg" alt="Instagram post with the caption: A Milestone of Trust, Commitment &amp;amp; Progress! 🏗️🤝
+
+ABS Deve..." loading="lazy">
+    <div tabindex="0" role="link" aria-label="Instagram post 22 opens in a new tab" class="instafeed-new-layout-item-container abs-ig-media">
+      <div class="instafeed-hover-layer " data-feed-id="0-carousel_album" style="border-radius:6px;"><div class="instafeed-hover-icon"><img class="instafeed-lazy-image instafeed-lazy-image--handled" src="/assets/images/instagram/instagram-icon.svg" alt=""></div></div>
+    </div><div class="abs-ig-footer" data-abs-instagram-ui="footer"><div class="abs-ig-actions" data-abs-instagram-ui="actions"><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.8 4.8a5.5 5.5 0 0 0-7.8 0L12 5.8l-1-1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.4a5.5 5.5 0 0 0 0-7.8Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9.5 9.5 0 0 1-3.7-.8L3 21l1.8-5a8.4 8.4 0 1 1 16.2-4.5Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m22 2-9.5 20-2.1-8.4L2 10.5 22 2Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10.4 13.6 22 2" stroke="currentColor" stroke-width="1.55" stroke-linecap="round"></path></svg></span><span class="abs-ig-action abs-ig-action--bookmark"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 3.5h12v17L12 17l-6 3.5v-17Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div><p class="abs-ig-caption" data-abs-instagram-ui="caption">A Milestone of Trust, Commitment &amp; Progress! 🏗️🤝 ABS Developers proudly marks another significant achievement with the Possession Handover to The University of Lahore at Pearl One Courtyard. This milestone reflects our commitment to delivering on promises, building lasting institutional partnerships, and transforming ambitious visions into reality. At ABS Developers, we don’t just build structures. We deliver commitments. 🌐 www.abs-developers.com 📞 03-222-333-332 #ABSDevelopers #PearlOneCourtyard #UniversityOfLahore #PossessionHandover #BuildingTrust</p></div></div>
+<div style="clip-path: inset(0px round 6px);" class="instafeed-new-layout-item abs-ig-card image-loaded" data-abs-instagram-permalink="https://www.instagram.com/p/DeZp11Rjn_r/"><div class="abs-ig-card-head" data-abs-instagram-ui="header"><span class="abs-ig-avatar" aria-hidden="true">ABS</span><span class="abs-ig-username">absdevelopers</span></div><img style="border-radius:6px;" class="instafeed-lazy-image instafeed-lazy-image--handled" src="/assets/images/instagram/post-23.jpg" alt="Instagram post with the caption: A Milestone of Trust, Commitment &amp;amp; Progress! 🏗️🤝
+
+ABS Deve..." loading="lazy">
+    <div tabindex="0" role="link" aria-label="Instagram post 23 opens in a new tab" class="instafeed-new-layout-item-container abs-ig-media">
+      <div class="instafeed-hover-layer " data-feed-id="0-carousel_album" style="border-radius:6px;"><div class="instafeed-hover-icon"><img class="instafeed-lazy-image instafeed-lazy-image--handled" src="/assets/images/instagram/instagram-icon.svg" alt=""></div></div>
+    </div><div class="abs-ig-footer" data-abs-instagram-ui="footer"><div class="abs-ig-actions" data-abs-instagram-ui="actions"><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.8 4.8a5.5 5.5 0 0 0-7.8 0L12 5.8l-1-1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.4a5.5 5.5 0 0 0 0-7.8Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9.5 9.5 0 0 1-3.7-.8L3 21l1.8-5a8.4 8.4 0 1 1 16.2-4.5Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m22 2-9.5 20-2.1-8.4L2 10.5 22 2Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10.4 13.6 22 2" stroke="currentColor" stroke-width="1.55" stroke-linecap="round"></path></svg></span><span class="abs-ig-action abs-ig-action--bookmark"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 3.5h12v17L12 17l-6 3.5v-17Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div><p class="abs-ig-caption" data-abs-instagram-ui="caption">A Milestone of Trust, Commitment &amp; Progress! 🏗️🤝 ABS Developers proudly marks another significant achievement with the Possession Handover to The University of Lahore at Pearl One Courtyard. This milestone reflects our commitment to delivering on promises, building lasting institutional partnerships, and transforming ambitious visions into reality. At ABS Developers, we don’t just build structures. We deliver commitments. 🌐 www.abs-developers.com 📞 03-222-333-332 #ABSDevelopers #PearlOneCourtyard #UniversityOfLahore #PossessionHandover #BuildingTrust</p></div></div>
+<div style="clip-path: inset(0px round 6px);" class="instafeed-new-layout-item abs-ig-card image-loaded" data-abs-instagram-permalink="https://www.instagram.com/p/DeZp0dEDro-/"><div class="abs-ig-card-head" data-abs-instagram-ui="header"><span class="abs-ig-avatar" aria-hidden="true">ABS</span><span class="abs-ig-username">absdevelopers</span></div><img style="border-radius:6px;" class="instafeed-lazy-image instafeed-lazy-image--handled" src="/assets/images/instagram/post-24.jpg" alt="Instagram post with the caption: A Milestone of Trust, Commitment &amp;amp; Progress! 🏗️🤝
+
+ABS Deve..." loading="lazy">
+    <div tabindex="0" role="link" aria-label="Instagram post 24 opens in a new tab" class="instafeed-new-layout-item-container abs-ig-media">
+      <div class="instafeed-hover-layer " data-feed-id="0-carousel_album" style="border-radius:6px;"><div class="instafeed-hover-icon"><img class="instafeed-lazy-image instafeed-lazy-image--handled" src="/assets/images/instagram/instagram-icon.svg" alt=""></div></div>
+    </div><div class="abs-ig-footer" data-abs-instagram-ui="footer"><div class="abs-ig-actions" data-abs-instagram-ui="actions"><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.8 4.8a5.5 5.5 0 0 0-7.8 0L12 5.8l-1-1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.4a5.5 5.5 0 0 0 0-7.8Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9.5 9.5 0 0 1-3.7-.8L3 21l1.8-5a8.4 8.4 0 1 1 16.2-4.5Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="abs-ig-action"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m22 2-9.5 20-2.1-8.4L2 10.5 22 2Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10.4 13.6 22 2" stroke="currentColor" stroke-width="1.55" stroke-linecap="round"></path></svg></span><span class="abs-ig-action abs-ig-action--bookmark"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 3.5h12v17L12 17l-6 3.5v-17Z" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div><p class="abs-ig-caption" data-abs-instagram-ui="caption">A Milestone of Trust, Commitment &amp; Progress! 🏗️🤝 ABS Developers proudly marks another significant achievement with the Possession Handover to The University of Lahore at Pearl One Courtyard. This milestone reflects our commitment to delivering on promises, building lasting institutional partnerships, and transforming ambitious visions into reality. At ABS Developers, we don’t just build structures. We deliver commitments. 🌐 www.abs-developers.com 📞 03-222-333-332 #ABSDevelopers #PearlOneCourtyard #UniversityOfLahore #PossessionHandover #BuildingTrust</p></div></div>
+</div></div></div>
+</div>
+</div>
+
+
+    <div
+      class="abs-instagram__reference-dots"
+      data-abs-instagram-pages
+      aria-label="Instagram feed pages"
+    >
+      <button class="abs-instagram__reference-dot is-active" type="button" data-abs-instagram-page="0" aria-label="Instagram page 1" aria-current="true"></button>
+      <button class="abs-instagram__reference-dot" type="button" data-abs-instagram-page="1" aria-label="Instagram page 2"></button>
+      <button class="abs-instagram__reference-dot" type="button" data-abs-instagram-page="2" aria-label="Instagram page 3"></button>
+      <button class="abs-instagram__reference-dot" type="button" data-abs-instagram-page="3" aria-label="Instagram page 4"></button>
+      <button class="abs-instagram__reference-dot" type="button" data-abs-instagram-page="4" aria-label="Instagram page 5"></button>
+    </div>
+
+    <div class="abs-instagram__divider" aria-hidden="true"></div>
+  </div>
+
+  <script src="/assets/js/instagram-feed.js" defer="defer"></script>
+
+</section>
+
+
+</section>

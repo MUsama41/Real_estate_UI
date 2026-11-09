@@ -1,0 +1,373 @@
+
+      @font-face {
+  font-family: Assistant;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/fonts/assistant_n4.woff2") format("woff2"),
+       url("/assets/fonts/assistant_n4.woff") format("woff");
+}
+
+@font-face {
+  font-family: Assistant;
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/fonts/assistant_n5.woff2") format("woff2"),
+       url("/assets/fonts/assistant_n5.woff") format("woff");
+}
+@font-face {
+  font-family: Assistant;
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/fonts/assistant_n6.woff2") format("woff2"),
+       url("/assets/fonts/assistant_n6.woff") format("woff");
+}
+@font-face {
+  font-family: Assistant;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/fonts/assistant_n7.woff2") format("woff2"),
+       url("/assets/fonts/assistant_n7.woff") format("woff");
+}
+
+      
+      
+      @font-face {
+  font-family: Assistant;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/fonts/assistant_n4.woff2") format("woff2"),
+       url("/assets/fonts/assistant_n4.woff") format("woff");
+}
+
+@font-face {
+  font-family: Assistant;
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/fonts/assistant_n5.woff2") format("woff2"),
+       url("/assets/fonts/assistant_n5.woff") format("woff");
+}
+@font-face {
+  font-family: Assistant;
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/fonts/assistant_n6.woff2") format("woff2"),
+       url("/assets/fonts/assistant_n6.woff") format("woff");
+}
+@font-face {
+  font-family: Assistant;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/fonts/assistant_n7.woff2") format("woff2"),
+       url("/assets/fonts/assistant_n7.woff") format("woff");
+}
+
+:root,.color-scheme-1 {
+          --color-background: 255, 255, 255;
+          --gradient-background: #ffffff;
+          --color-foreground: 18, 18, 18;
+          --color-shadow: 18, 18, 18;
+          --color-button: 18, 18, 18;
+          --color-button-text: 255, 255, 255;
+          --color-secondary-button: 255, 255, 255;
+          --color-secondary-button-text: 18, 18, 18;
+          --color-link: 18, 18, 18;
+          --color-badge-foreground: 18, 18, 18;
+          --color-badge-background: 255, 255, 255;
+          --color-badge-border: 18, 18, 18;
+          --payment-terms-background-color: rgb(255 255 255);
+        }
+.color-scheme-2 {
+          --color-background: 243, 243, 243;
+          --gradient-background: #f3f3f3;
+          --color-foreground: 18, 18, 18;
+          --color-shadow: 18, 18, 18;
+          --color-button: 18, 18, 18;
+          --color-button-text: 243, 243, 243;
+          --color-secondary-button: 243, 243, 243;
+          --color-secondary-button-text: 18, 18, 18;
+          --color-link: 18, 18, 18;
+          --color-badge-foreground: 18, 18, 18;
+          --color-badge-background: 243, 243, 243;
+          --color-badge-border: 18, 18, 18;
+          --payment-terms-background-color: rgb(243 243 243);
+        }
+.color-scheme-3 {
+          --color-background: 36, 40, 51;
+          --gradient-background: #242833;
+          --color-foreground: 255, 255, 255;
+          --color-shadow: 18, 18, 18;
+          --color-button: 255, 255, 255;
+          --color-button-text: 0, 0, 0;
+          --color-secondary-button: 36, 40, 51;
+          --color-secondary-button-text: 255, 255, 255;
+          --color-link: 255, 255, 255;
+          --color-badge-foreground: 255, 255, 255;
+          --color-badge-background: 36, 40, 51;
+          --color-badge-border: 255, 255, 255;
+          --payment-terms-background-color: rgb(36 40 51);
+        }
+.color-scheme-4 {
+          --color-background: 18, 18, 18;
+          --gradient-background: #121212;
+          --color-foreground: 255, 255, 255;
+          --color-shadow: 18, 18, 18;
+          --color-button: 255, 255, 255;
+          --color-button-text: 18, 18, 18;
+          --color-secondary-button: 18, 18, 18;
+          --color-secondary-button-text: 255, 255, 255;
+          --color-link: 255, 255, 255;
+          --color-badge-foreground: 255, 255, 255;
+          --color-badge-background: 18, 18, 18;
+          --color-badge-border: 255, 255, 255;
+          --payment-terms-background-color: rgb(18 18 18);
+        }
+.color-scheme-5 {
+          --color-background: 51, 79, 180;
+          --gradient-background: #334fb4;
+          --color-foreground: 255, 255, 255;
+          --color-shadow: 18, 18, 18;
+          --color-button: 255, 255, 255;
+          --color-button-text: 51, 79, 180;
+          --color-secondary-button: 51, 79, 180;
+          --color-secondary-button-text: 255, 255, 255;
+          --color-link: 255, 255, 255;
+          --color-badge-foreground: 255, 255, 255;
+          --color-badge-background: 51, 79, 180;
+          --color-badge-border: 255, 255, 255;
+          --payment-terms-background-color: rgb(51 79 180);
+        }body, .color-scheme-1, .color-scheme-2, .color-scheme-3, .color-scheme-4, .color-scheme-5 {
+        color: rgba(var(--color-foreground), 0.75);
+        background: rgb(var(--color-background));
+      }
+
+      :root {
+        /* Dawn compatibility */
+        --font-body-family: Assistant, sans-serif;
+        --font-body-style: normal;
+        --font-body-weight: 400;
+        --font-body-weight-bold: 700;
+        --font-heading-family: Assistant, sans-serif;
+        --font-heading-style: normal;
+        --font-heading-weight: 400;
+        --font-body-scale: 1.0;
+        --font-heading-scale: 1.0;
+
+        --media-padding: px;
+        --media-border-opacity: 0.05;
+        --media-border-width: 1px;
+        --media-radius: 0px;
+        --media-shadow-opacity: 0.0;
+        --media-shadow-horizontal-offset: 0px;
+        --media-shadow-vertical-offset: 4px;
+        --media-shadow-blur-radius: 5px;
+
+        --page-width: 120rem;
+        --page-width-margin: 2rem;
+
+        --product-card-image-padding: 0.0rem;
+        --product-card-corner-radius: 0.0rem;
+        --product-card-text-alignment: left;
+        --product-card-border-width: 0.0rem;
+        --product-card-border-opacity: 0.1;
+        --product-card-shadow-opacity: 0.0;
+        --product-card-shadow-horizontal-offset: 0.0rem;
+        --product-card-shadow-vertical-offset: 0.4rem;
+        --product-card-shadow-blur-radius: 0.5rem;
+
+        --collection-card-image-padding: 0.0rem;
+        --collection-card-corner-radius: 0.0rem;
+        --collection-card-text-alignment: left;
+        --collection-card-border-width: 0.0rem;
+        --collection-card-border-opacity: 0.1;
+        --collection-card-shadow-opacity: 0.0;
+        --collection-card-shadow-horizontal-offset: 0.0rem;
+        --collection-card-shadow-vertical-offset: 0.4rem;
+        --collection-card-shadow-blur-radius: 0.5rem;
+
+        --blog-card-image-padding: 0.0rem;
+        --blog-card-corner-radius: 0.0rem;
+        --blog-card-text-alignment: left;
+        --blog-card-border-width: 0.0rem;
+        --blog-card-border-opacity: 0.1;
+        --blog-card-shadow-opacity: 0.0;
+        --blog-card-shadow-horizontal-offset: 0.0rem;
+        --blog-card-shadow-vertical-offset: 0.4rem;
+        --blog-card-shadow-blur-radius: 0.5rem;
+
+        --badge-corner-radius: 4.0rem;
+
+        --popup-border-width: 1px;
+        --popup-border-opacity: 0.1;
+        --popup-corner-radius: 0px;
+        --popup-shadow-opacity: 0.05;
+        --popup-shadow-horizontal-offset: 0px;
+        --popup-shadow-vertical-offset: 4px;
+        --popup-shadow-blur-radius: 5px;
+
+        --drawer-border-width: 1px;
+        --drawer-border-opacity: 0.1;
+        --drawer-shadow-opacity: 0.0;
+        --drawer-shadow-horizontal-offset: 0px;
+        --drawer-shadow-vertical-offset: 4px;
+        --drawer-shadow-blur-radius: 5px;
+
+        --spacing-sections-desktop: 0px;
+        --spacing-sections-mobile: 20px;
+        --grid-desktop-vertical-spacing: 8px;
+        --grid-desktop-horizontal-spacing: 8px;
+        --grid-mobile-vertical-spacing: 4px;
+        --grid-mobile-horizontal-spacing: 4px;
+
+        --text-boxes-border-opacity: 0.1;
+        --text-boxes-border-width: 0px;
+        --text-boxes-radius: 0px;
+        --text-boxes-shadow-opacity: 0.0;
+        --text-boxes-shadow-horizontal-offset: 0px;
+        --text-boxes-shadow-vertical-offset: 4px;
+        --text-boxes-shadow-blur-radius: 5px;
+
+        --buttons-radius: 0px;
+        --buttons-radius-outset: 1px;
+        --buttons-border-width: 1px;
+        --buttons-border-opacity: 1.0;
+        --buttons-shadow-opacity: 0.0;
+        --buttons-shadow-horizontal-offset: 0px;
+        --buttons-shadow-vertical-offset: 4px;
+        --buttons-shadow-blur-radius: 5px;
+        --buttons-border-offset: 0.3px;
+
+        --inputs-radius: 0px;
+        --inputs-border-width: 1px;
+        --inputs-border-opacity: 0.55;
+        --inputs-shadow-opacity: 0.0;
+        --inputs-shadow-horizontal-offset: 0px;
+        --inputs-shadow-vertical-offset: 4px;
+        --inputs-shadow-blur-radius: 5px;
+        --inputs-radius-outset: 1px;
+
+        --variant-pills-radius: 40px;
+        --variant-pills-border-width: 1px;
+        --variant-pills-border-opacity: 0.55;
+        --variant-pills-shadow-opacity: 0.0;
+        --variant-pills-shadow-horizontal-offset: 0px;
+        --variant-pills-shadow-vertical-offset: 4px;
+        --variant-pills-shadow-blur-radius: 5px;
+
+        /* ABS Developers design foundation */
+        --abs-ink: #0A0C0A;
+        --abs-white: #ffffff;
+        --abs-off-white: #f5f6f3;
+        --abs-stone: #d9ddd7;
+        --abs-muted: #727972;
+        --abs-green: #0A0C0A;
+        --abs-green-deep: #0A0C0A;
+        --abs-line: rgba(11, 13, 12, 0.14);
+        --abs-container: 1440px;
+        --abs-gutter: clamp(20px, 4vw, 72px);
+        --abs-section-space: clamp(88px, 11vw, 180px);
+        --abs-ease: cubic-bezier(0.22, 1, 0.36, 1);
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      html {
+        box-sizing: border-box;
+        min-height: 100%;
+        font-size: calc(var(--font-body-scale) * 62.5%);
+        scroll-behavior: smooth;
+        background: var(--abs-off-white);
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+        margin: 0;
+        overflow-x: hidden;
+        font-family:
+          var(--font-body-family),
+          -apple-system,
+          BlinkMacSystemFont,
+          "SF Pro Display",
+          "Helvetica Neue",
+          Arial,
+          sans-serif;
+        font-style: var(--font-body-style);
+        font-weight: var(--font-body-weight);
+        font-size: 1.5rem;
+        line-height: 1.55;
+        letter-spacing: 0;
+        color: var(--abs-ink);
+        background: var(--abs-off-white);
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      body.template-index {
+        background: var(--abs-white);
+      }
+
+      img,
+      video,
+      svg {
+        max-width: 100%;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      #MainContent {
+        width: 100%;
+        flex: 1 0 auto;
+      }
+
+      .abs-shell {
+        width: min(calc(100% - (var(--abs-gutter) * 2)), var(--abs-container));
+        margin-inline: auto;
+      }
+
+      .abs-section {
+        position: relative;
+        padding-block: var(--abs-section-space);
+      }
+
+      ::selection {
+        background: rgba(37, 37, 37, 0.18);
+        color: inherit;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+
+        *,
+        *::before,
+        *::after {
+          scroll-behavior: auto !important;
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+
+      @media screen and (min-width: 750px) {
+        body {
+          font-size: 1.6rem;
+        }
+      }
+    

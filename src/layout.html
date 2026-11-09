@@ -1,0 +1,42 @@
+<!doctype html>
+<html class="js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0A0C0A">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/brand/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/brand/apple-touch-icon.png">
+    <title>{{ page.title }}</title>
+    <meta name="description" content="{{ page.description }}">
+
+    <link href="/assets/css/theme-settings.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/assets/css/base.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/assets/css/abs-luxury.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/assets/vendor/instafeed/instafeed.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="preload" as="font" href="/assets/fonts/assistant_n4.woff2" type="font/woff2" crossorigin>
+
+    <script src="/assets/js/abs-luxury.js" defer="defer"></script>
+    <script src="/assets/js/animations.js" defer="defer"></script>
+  </head>
+
+  <body class="{{ page.body_class }}" data-abs-site>
+    <a class="skip-to-content-link button visually-hidden" href="#MainContent">
+      Skip to content
+    </a>
+    {% include "partials/header.html" %}
+    <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1" data-template="{{ page.template }}">
+{{ content }}
+    </main>
+    {% include "partials/instagram_feed.html" %}
+    {% include "partials/latest_insights.html" %}
+    {% include "partials/footer.html" %}
+{{ after_footer }}
+
+    <ul hidden>
+      <li id="a11y-refresh-page-message">Choosing a selection results in a full page refresh.</li>
+      <li id="a11y-new-window-message">Opens in a new window.</li>
+    </ul>
+  </body>
+</html>
